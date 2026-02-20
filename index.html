@@ -1,36 +1,50 @@
+
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لياسمين من أمين</title>
+    <title>Surprise pour Yassmine</title>
     <style>
         body { background-color: #ffeef8; text-align: center; font-family: sans-serif; padding: 50px 20px; }
-        .box { background: white; border-radius: 20px; padding: 30px; display: inline-block; box-shadow: 0 10px 20px rgba(0,0,0,0.1); max-width: 400px; }
-        .heart { font-size: 80px; cursor: pointer; color: #ff4d94; animation: pulse 1s infinite; }
+        .box { background: white; border-radius: 20px; padding: 25px; display: inline-block; box-shadow: 0 10px 20px rgba(0,0,0,0.1); max-width: 450px; }
+        .heart { font-size: 70px; cursor: pointer; color: #ff4d94; animation: pulse 1s infinite; margin: 15px 0; }
         @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
         .hidden { display: none; }
         button { background: #ff4d94; color: white; border: none; padding: 12px 25px; border-radius: 10px; cursor: pointer; font-size: 18px; margin-top: 15px; }
-        img { border-radius: 15px; margin-bottom: 10px; }
+        .poem { font-size: 16px; line-height: 1.8; color: #444; background: #fff5fb; padding: 15px; border-radius: 10px; border: 1px dashed #ff4d94; margin-top: 10px; text-align: right; direction: rtl; }
     </style>
 </head>
 <body>
     <div id="step1" class="box">
-        <img src="https://media.tenor.com/IC6m_v4V4mEAAAAi/hello-kitty.gif" width="150">
-        <h2>ياسمين، عندي هدية إلج كلش راح تحبيها</h2>
-        <button onclick="next(1)">شنو هي؟ 🙊</button>
+        <img src="https://media.tenor.com/IC6m_v4V4mEAAAAi/hello-kitty.gif" width="140">
+        <h2>Ahla yassmine 🙈</h2>
+        <p style="font-size: 18px;">عندي ليك cadeaux صغير باش يعجبك</p>
+        <button onclick="next(1)">Chnwa hwa? 😍</button>
     </div>
 
     <div id="step2" class="box hidden">
-        <img src="https://media.tenor.com/jU60l9jA0Y8AAAAi/hello-kitty-winking.gif" width="150">
-        <h2>تحبين أمين لو لا؟</h2>
-        <div class="heart" onclick="next(2)">❤️</div>
+        <img src="https://media.tenor.com/jU60l9jA0Y8AAAAi/hello-kitty-winking.gif" width="140">
+        <h2>3ndi s2al lik.. 🙊</h2>
+        <button onclick="next(2)">اسألني 😊</button>
     </div>
 
     <div id="step3" class="box hidden">
-        <h2 style="color: #ff4d94;">أعشقك وأحبك! ❤️</h2>
-        <p style="font-style: italic; color: #555;">"رقت بوصف جمالك الأقوال.. وزانكِ فافتتنت بكِ العذال"</p>
-        <p>🎵 أغنيتنا المفضلة 🎵</p>
+        <img src="https://media.tenor.com/On79Z7Y778YAAAAi/hello-kitty-love.gif" width="140">
+        <h2>T7ib amine w'le 🙂</h2>
+        <div class="heart" onclick="next(3)">❤️</div>
+    </div>
+
+    <div id="step4" class="box hidden">
+        <h2 style="color: #ff4d94;">Nmot 3lik w n3ch9k</h2>
+        <p style="font-weight: bold; font-size: 18px;">w ett a7la 7aja saret fi 7yeti ❤️</p>
+        <div class="poem">
+            رقت بوصف جمالكِ الأقوالُ.. وزانكِ فافتتنت بكِ العذالُ <br>
+            ومن الإله بكِ الجمال تجملاً.. حتى كأنكِ للجمالِ مِثالُ <br>
+            ولقد تراكِ كسيتِ أجمل منظرٍ.. ومع الجمالِ سكينةٌ ووقارُ <br>
+            والله ما طلعت شمسٌ ولا غربت.. إلا وحبكِ مقرونٌ بأنفاسي <br>
+            ولا جلستُ إلى قومٍ أحدّثهم.. إلا وأنتِ حديثي بين جلاّسي
+        </div>
     </div>
 
     <script>
