@@ -1,0 +1,25 @@
+.Happy__Birthday::after {
+  content: "Happy Birthday!";
+  font-family: 'My love', cursive; /* El font elli t7eb 3lih */
+  color: #c2185b;
+  font-size: 3.5em;
+  font-weight: 700;
+  border-right: 3px solid #c2185b; /* Hatha el cursor elli yermech */
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  
+  /* El Animation mta3 el ktaba */
+  animation: typing 3s steps(15, end), blink 0.5s step-end infinite alternate;
+}
+
+/* Animation mta3 el ktaba */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Animation mta3 el cursor (|) elli yermech */
+@keyframes blink {
+  50% { border-color: transparent; }
+}
